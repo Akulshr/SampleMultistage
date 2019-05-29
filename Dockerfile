@@ -2,7 +2,7 @@
 # =========================================================================
 # BUILD IMAGE
 # =========================================================================
-FROM dtrhnp.dcp.na.xom.com/windows/aspnet:4.7.2 AS builder
+FROM microsoft/dotnet-framework:4.7.2-sdk AS builder
 
 # This installs the WebBuildTools for proper building of ASP.NET projects
 RUN Invoke-WebRequest -Uri "https://download.visualstudio.microsoft.com/download/pr/12210059/e64d79b40219aea618ce2fe10ebd5f0d/vs_BuildTools.exe" `
